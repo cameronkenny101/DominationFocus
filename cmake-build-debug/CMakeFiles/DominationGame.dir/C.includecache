@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+structs.h
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/input_output.h
+structs.h
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/player_movement.c
+stdio.h
+-
+stdlib.h
+-
+player_movement.h
+C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
+input_output.h
+C:/Users/camek/CLionProjects/DominationGame/src/input_output.h
+game_init.h
+C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
+structs.h
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
