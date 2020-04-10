@@ -1,3 +1,0 @@
-C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/DominationGame.dir
-C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir

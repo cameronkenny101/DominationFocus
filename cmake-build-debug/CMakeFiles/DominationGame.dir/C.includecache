@@ -6,15 +6,39 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/camek/CLionProjects/DominationGame/src/game_init.c
+C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+structs.h
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/input_output.h
+structs.h
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/main.c
 stdio.h
--
-stdlib.h
 -
 game_init.h
 C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+input_output.h
+C:/Users/camek/CLionProjects/DominationGame/src/input_output.h
+player_movement.h
+C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
+play_game.h
+C:/Users/camek/CLionProjects/DominationGame/src/play_game.h
 
-C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+C:/Users/camek/CLionProjects/DominationGame/src/play_game.c
+stdio.h
+-
+play_game.h
+C:/Users/camek/CLionProjects/DominationGame/src/play_game.h
+player_movement.h
+C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/play_game.h
+structs.h
+C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+
+C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
 structs.h
 C:/Users/camek/CLionProjects/DominationGame/src/structs.h
 

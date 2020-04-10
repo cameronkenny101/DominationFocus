@@ -47,9 +47,10 @@ void move_piece(player *players, square board[8][8])
 
     printf("8 is up, 4 is left, 6 is right, 2 is down\n");
 
-    int correctPosition = 0, step, left = 0, right = 0, up = 0, down = 0, finish_row = 0, finish_column = 0;
+    int correctPosition = 0, step, left = 0, right = 0, up = 0, down = 0, finish_row = 0, finish_column = 0, goBack;
     while(correctPosition == 0)
     {
+
         for (int i = 1; i <= board[row][column].num_pieces; i++)
         {
             printf("%d Step : ", i);
@@ -111,7 +112,6 @@ void position_captured_piece(player *players, square board[8][8])
 }
 
 void move_stack(square *from, square *to, player *players) {
-    int color;
     from->bottom->next = to->stack;
     to->stack = from->stack;
     if (to->bottom == NULL)
@@ -204,27 +204,19 @@ void move_captured_piece(player *players, square *moveCapturedPiece)
             set_green(moveCapturedPiece);
     }
     else {
-        int total = moveCapturedPiece->num_pieces++;
+        piece * curr;
+
+        curr = moveCapturedPiece->stack;
+        moveCapturedPiece->stack = (piece *) malloc (sizeof(piece));
         players->pieces_captured--;
-        moveCapturedPiece->bottom = moveCapturedPiece->stack;
+        moveCapturedPiece->num_pieces++;
 
         if(players->player_color == RED)
-            set_red(moveCapturedPiece);
+            moveCapturedPiece->stack->p_color = RED;
         else
-            set_green(moveCapturedPiece);
+            moveCapturedPiece->stack->p_color = GREEN;
 
-        moveCapturedPiece->stack->next = moveCapturedPiece->bottom;
-        moveCapturedPiece->num_pieces = total;
-        if(moveCapturedPiece->num_pieces == 2)
-            moveCapturedPiece->bottom = moveCapturedPiece->stack->next;
-        else if(moveCapturedPiece->num_pieces == 3)
-            moveCapturedPiece->bottom = moveCapturedPiece->stack->next->next;
-        else if(moveCapturedPiece->num_pieces == 4)
-            moveCapturedPiece->bottom = moveCapturedPiece->stack->next->next->next;
-        else if(moveCapturedPiece->num_pieces == 5)
-            moveCapturedPiece->bottom = moveCapturedPiece->stack->next->next->next->next;
-        else if(moveCapturedPiece->num_pieces == 6)
-            moveCapturedPiece->bottom = moveCapturedPiece->stack->next->next->next->next;
+        moveCapturedPiece->stack->next = curr;
 
         if (moveCapturedPiece->num_pieces == 6) {
 
