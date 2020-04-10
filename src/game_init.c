@@ -48,12 +48,15 @@ void initialize_players(player *player1, player *player2){
 void set_invalid(square * s){
 s->type = INVALID;
 s->stack = NULL;
+s->bottom = NULL;
 s->num_pieces = 0;
 }
 
 void set_empty(square * s){
 s->type = VALID;
 s->stack = NULL;
+s->bottom = NULL;
+
 s->num_pieces = 0;
 }
 
@@ -64,6 +67,7 @@ s->stack->p_color = GREEN;
 s->stack->next = NULL;
 s->num_pieces = 1;
 s->bottom = s->stack;
+
 }
 
 void set_red(square * s){

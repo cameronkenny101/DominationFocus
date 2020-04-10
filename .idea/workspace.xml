@@ -11,7 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="" />
+    <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player_movement.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_movement.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +32,11 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZibyyrrHVUo1wz6t0P0vfAi0vg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +44,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/player_movement.c" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -80,6 +96,7 @@
       <workItem from="1586173508676" duration="72977000" />
       <workItem from="1586355210616" duration="5000" />
       <workItem from="1586356137467" duration="7603000" />
+      <workItem from="1586435726006" duration="7641000" />
     </task>
     <servers />
   </component>

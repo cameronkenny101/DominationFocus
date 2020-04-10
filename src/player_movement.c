@@ -204,7 +204,6 @@ void move_captured_piece(player *players, square *moveCapturedPiece)
             set_green(moveCapturedPiece);
     }
     else {
-
         int total = moveCapturedPiece->num_pieces++;
         players->pieces_captured--;
         moveCapturedPiece->bottom = moveCapturedPiece->stack;
