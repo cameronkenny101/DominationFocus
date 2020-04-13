@@ -12,26 +12,26 @@ void move_piece(player *players, square board[8][8])
 {
     int cont = 0, row = 0, column = 0, accept, players_color = 0, square_color = 0;
 
-    if(players->player_color == RED)
+    if(players->player_color == RED) // if color is red set to 1. This is then compared later
         players_color = 1;
     else
-        players_color = 2;
+        players_color = 2; // if green set to 2
 
-    while(cont == 0)
+    while(cont == 0) // enters while loop as cont is set to 0 initially
     {
         printf("Please type the row of the piece you want to move : ");
         scanf("%d", &row);
         printf("Please type the column of the piece you want to move : ");
         scanf("%d", &column);
 
-        if(row > 7 || row < 0 || column > 7 || column < 0)
+        if(row > 7 || row < 0 || column > 7 || column < 0) // if choice is not in array square color will be different to player color and will loop again
             square_color = -1;
-        else if(board[row][column].num_pieces == 0)
+        else if(board[row][column].num_pieces == 0) // if no pieces on board will loop again
             square_color = 0;
-        else if(board[row][column].stack->p_color == RED)
+        else if(board[row][column].stack->p_color == RED) // if co-ordinates are red sets to 1
             square_color = 1;
         else
-            square_color = 2;
+            square_color = 2; // if coordinates are green set to 2
 
         if(players_color != square_color)
         {
