@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\camek\CLionProjects\DominationGame
+CMAKE_SOURCE_DIR = C:\Users\camek\Documents\GitHub\DominationFocus
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DominationGame.dir/depend.make
@@ -58,68 +58,68 @@ include CMakeFiles/DominationGame.dir/flags.make
 
 CMakeFiles/DominationGame.dir/src/main.c.obj: CMakeFiles/DominationGame.dir/flags.make
 CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DominationGame.dir/src/main.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\main.c.obj   -c C:\Users\camek\CLionProjects\DominationGame\src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/DominationGame.dir/src/main.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\main.c.obj   -c C:\Users\camek\Documents\GitHub\DominationFocus\src\main.c
 
 CMakeFiles/DominationGame.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DominationGame.dir/src/main.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\CLionProjects\DominationGame\src\main.c > CMakeFiles\DominationGame.dir\src\main.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\Documents\GitHub\DominationFocus\src\main.c > CMakeFiles\DominationGame.dir\src\main.c.i
 
 CMakeFiles/DominationGame.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DominationGame.dir/src/main.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\CLionProjects\DominationGame\src\main.c -o CMakeFiles\DominationGame.dir\src\main.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\Documents\GitHub\DominationFocus\src\main.c -o CMakeFiles\DominationGame.dir\src\main.c.s
 
 CMakeFiles/DominationGame.dir/src/game_init.c.obj: CMakeFiles/DominationGame.dir/flags.make
 CMakeFiles/DominationGame.dir/src/game_init.c.obj: ../src/game_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DominationGame.dir/src/game_init.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\game_init.c.obj   -c C:\Users\camek\CLionProjects\DominationGame\src\game_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/DominationGame.dir/src/game_init.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\game_init.c.obj   -c C:\Users\camek\Documents\GitHub\DominationFocus\src\game_init.c
 
 CMakeFiles/DominationGame.dir/src/game_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DominationGame.dir/src/game_init.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\CLionProjects\DominationGame\src\game_init.c > CMakeFiles\DominationGame.dir\src\game_init.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\Documents\GitHub\DominationFocus\src\game_init.c > CMakeFiles\DominationGame.dir\src\game_init.c.i
 
 CMakeFiles/DominationGame.dir/src/game_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DominationGame.dir/src/game_init.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\CLionProjects\DominationGame\src\game_init.c -o CMakeFiles\DominationGame.dir\src\game_init.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\Documents\GitHub\DominationFocus\src\game_init.c -o CMakeFiles\DominationGame.dir\src\game_init.c.s
 
 CMakeFiles/DominationGame.dir/src/input_output.c.obj: CMakeFiles/DominationGame.dir/flags.make
 CMakeFiles/DominationGame.dir/src/input_output.c.obj: ../src/input_output.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DominationGame.dir/src/input_output.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\input_output.c.obj   -c C:\Users\camek\CLionProjects\DominationGame\src\input_output.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/DominationGame.dir/src/input_output.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\input_output.c.obj   -c C:\Users\camek\Documents\GitHub\DominationFocus\src\input_output.c
 
 CMakeFiles/DominationGame.dir/src/input_output.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DominationGame.dir/src/input_output.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\CLionProjects\DominationGame\src\input_output.c > CMakeFiles\DominationGame.dir\src\input_output.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\Documents\GitHub\DominationFocus\src\input_output.c > CMakeFiles\DominationGame.dir\src\input_output.c.i
 
 CMakeFiles/DominationGame.dir/src/input_output.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DominationGame.dir/src/input_output.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\CLionProjects\DominationGame\src\input_output.c -o CMakeFiles\DominationGame.dir\src\input_output.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\Documents\GitHub\DominationFocus\src\input_output.c -o CMakeFiles\DominationGame.dir\src\input_output.c.s
 
 CMakeFiles/DominationGame.dir/src/player_movement.c.obj: CMakeFiles/DominationGame.dir/flags.make
 CMakeFiles/DominationGame.dir/src/player_movement.c.obj: ../src/player_movement.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DominationGame.dir/src/player_movement.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\player_movement.c.obj   -c C:\Users\camek\CLionProjects\DominationGame\src\player_movement.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/DominationGame.dir/src/player_movement.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\player_movement.c.obj   -c C:\Users\camek\Documents\GitHub\DominationFocus\src\player_movement.c
 
 CMakeFiles/DominationGame.dir/src/player_movement.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DominationGame.dir/src/player_movement.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\CLionProjects\DominationGame\src\player_movement.c > CMakeFiles\DominationGame.dir\src\player_movement.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\Documents\GitHub\DominationFocus\src\player_movement.c > CMakeFiles\DominationGame.dir\src\player_movement.c.i
 
 CMakeFiles/DominationGame.dir/src/player_movement.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DominationGame.dir/src/player_movement.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\CLionProjects\DominationGame\src\player_movement.c -o CMakeFiles\DominationGame.dir\src\player_movement.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\Documents\GitHub\DominationFocus\src\player_movement.c -o CMakeFiles\DominationGame.dir\src\player_movement.c.s
 
 CMakeFiles/DominationGame.dir/src/play_game.c.obj: CMakeFiles/DominationGame.dir/flags.make
 CMakeFiles/DominationGame.dir/src/play_game.c.obj: ../src/play_game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/DominationGame.dir/src/play_game.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\play_game.c.obj   -c C:\Users\camek\CLionProjects\DominationGame\src\play_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/DominationGame.dir/src/play_game.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\DominationGame.dir\src\play_game.c.obj   -c C:\Users\camek\Documents\GitHub\DominationFocus\src\play_game.c
 
 CMakeFiles/DominationGame.dir/src/play_game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/DominationGame.dir/src/play_game.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\CLionProjects\DominationGame\src\play_game.c > CMakeFiles\DominationGame.dir\src\play_game.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\camek\Documents\GitHub\DominationFocus\src\play_game.c > CMakeFiles\DominationGame.dir\src\play_game.c.i
 
 CMakeFiles/DominationGame.dir/src/play_game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/DominationGame.dir/src/play_game.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\CLionProjects\DominationGame\src\play_game.c -o CMakeFiles\DominationGame.dir\src\play_game.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\camek\Documents\GitHub\DominationFocus\src\play_game.c -o CMakeFiles\DominationGame.dir\src\play_game.c.s
 
 # Object files for target DominationGame
 DominationGame_OBJECTS = \
@@ -141,7 +141,7 @@ DominationGame.exe: CMakeFiles/DominationGame.dir/build.make
 DominationGame.exe: CMakeFiles/DominationGame.dir/linklibs.rsp
 DominationGame.exe: CMakeFiles/DominationGame.dir/objects1.rsp
 DominationGame.exe: CMakeFiles/DominationGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable DominationGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable DominationGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DominationGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/DominationGame.dir/clean:
 .PHONY : CMakeFiles/DominationGame.dir/clean
 
 CMakeFiles/DominationGame.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\camek\CLionProjects\DominationGame C:\Users\camek\CLionProjects\DominationGame C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug C:\Users\camek\CLionProjects\DominationGame\cmake-build-debug\CMakeFiles\DominationGame.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\camek\Documents\GitHub\DominationFocus C:\Users\camek\Documents\GitHub\DominationFocus C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug C:\Users\camek\Documents\GitHub\DominationFocus\cmake-build-debug\CMakeFiles\DominationGame.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DominationGame.dir/depend
 

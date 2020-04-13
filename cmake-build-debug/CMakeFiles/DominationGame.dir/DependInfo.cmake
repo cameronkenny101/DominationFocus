@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/camek/CLionProjects/DominationGame/src/game_init.c" "C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj"
-  "C:/Users/camek/CLionProjects/DominationGame/src/input_output.c" "C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/DominationGame.dir/src/input_output.c.obj"
-  "C:/Users/camek/CLionProjects/DominationGame/src/main.c" "C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/DominationGame.dir/src/main.c.obj"
-  "C:/Users/camek/CLionProjects/DominationGame/src/play_game.c" "C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj"
-  "C:/Users/camek/CLionProjects/DominationGame/src/player_movement.c" "C:/Users/camek/CLionProjects/DominationGame/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj"
+  "C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj"
+  "C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/input_output.c.obj"
+  "C:/Users/camek/Documents/GitHub/DominationFocus/src/main.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/main.c.obj"
+  "C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj"
+  "C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

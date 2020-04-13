@@ -6,41 +6,45 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
 structs.h
-C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
 
-C:/Users/camek/CLionProjects/DominationGame/src/input_output.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
 structs.h
-C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
 
-C:/Users/camek/CLionProjects/DominationGame/src/main.c
+C:/Users/camek/Documents/GitHub/DominationFocus/src/main.c
 stdio.h
 -
 game_init.h
-C:/Users/camek/CLionProjects/DominationGame/src/game_init.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
 input_output.h
-C:/Users/camek/CLionProjects/DominationGame/src/input_output.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
 player_movement.h
-C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
 play_game.h
-C:/Users/camek/CLionProjects/DominationGame/src/play_game.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.h
 
-C:/Users/camek/CLionProjects/DominationGame/src/play_game.c
+C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.h
+structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
+
+C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.c
 stdio.h
 -
-play_game.h
-C:/Users/camek/CLionProjects/DominationGame/src/play_game.h
+stdlib.h
+-
 player_movement.h
-C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
+input_output.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
+game_init.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
 
-C:/Users/camek/CLionProjects/DominationGame/src/play_game.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
 structs.h
-C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
 
-C:/Users/camek/CLionProjects/DominationGame/src/player_movement.h
-structs.h
-C:/Users/camek/CLionProjects/DominationGame/src/structs.h
-
-C:/Users/camek/CLionProjects/DominationGame/src/structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
 

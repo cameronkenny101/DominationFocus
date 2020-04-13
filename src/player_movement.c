@@ -101,7 +101,7 @@ void position_captured_piece(player *players, square board[8][8])
         printf("Please type the column you would like to move your piece to : ");
         scanf("%d", &column);
 
-        if(board[row][column].type == VALID && column > 0 && column < 8 && row > 0 && row < 8)
+        if(board[row][column].type == VALID && column > -1 && column < 8 && row > -1 && row < 8)
             acceptMove = 1;
         else
             printf("Invalid move, Try Again!\n");
