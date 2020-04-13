@@ -14,15 +14,15 @@ void play_game(player player1, player player2, square board[8][8])
     do {
         topIsRed = 0;
         topIsGreen = 0;
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 8; i++) { // checks through the board tp see if win conditions have been made
             for (int j = 0; j < 8; j++) {
-                if(board[i][j].type == INVALID)
+                if(board[i][j].type == INVALID) // need this line to avoid crashes as not every square has a stack
                     continue;
-                else if(board[i][j].num_pieces == 0)
+                else if(board[i][j].num_pieces == 0) // need this line to avoid crashes as not every square has a stack
                     continue;
-                if(board[i][j].stack->p_color == RED)
+                else if(board[i][j].stack->p_color == RED) // if there is a red stack available to move sets red to 1
                     topIsRed = 1;
-                else if(board[i][j].stack->p_color == GREEN)
+                else if(board[i][j].stack->p_color == GREEN) // if there is a green stack available to move sets green to 1
                     topIsGreen = 1;
                 else
                     continue;
