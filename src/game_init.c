@@ -7,31 +7,37 @@
 #include "game_init.h"
 
 
-
+// Initalizes the player with user input
 void initialize_players(player *player1, player *player2){
     int color = 0;
     int playerNumber = 0;
     char line[20];
 
-    printf("Please enter name of Player %d : ", ++playerNumber); // Takes in Players 1 name
-    fgets(player1->player_name, 50, stdin);
+    // Takes in Players 1 name
+    printf("Please enter name of Player %d : ", ++playerNumber);
+    fgets(player1->player_name, 30, stdin);
 
+    // Takes in user color with number input. Use fgets and sscanf as if a letter is entered it clears it out of the buffer, meaning no infinite loops
     printf("\nEnter 1 to choose red, enter any other number to be green : ");
     fgets(line, sizeof(line), stdin);
     sscanf(line, "%d", &color);
 
+    // If users enter 1 they are assigned to the red color
     if(color == 1) {
         player1->player_color = RED;
         printf("\nPlayer 1 choose Red!\n");
     }
+    // If user enters any other key they are assigned to green
     else {
         player1->player_color = GREEN;
         printf("\nPlayer 1 choose Green!\n");
     }
 
+    // Takes in Player 2 name
     printf("\nPlease enter name of Player %d : ", ++playerNumber);
-    fgets(player2->player_name, 49, stdin);
+    fgets(player2->player_name, 30, stdin);
 
+    // Assigns player color based on choice Player 1 made
     if(player1->player_color == RED) {
         player2->player_color = GREEN;
         printf("\nPlayer 2 is Green!\n");
@@ -41,12 +47,14 @@ void initialize_players(player *player1, player *player2){
         printf("\nPlayer 2 is Red!\n");
     }
 
+    // Initilizes the number of pieces captured and destroyed to 0 for each player
     player1->pieces_captured = 0;
     player1->pieces_destroyed = 0;
     player2->pieces_captured = 0;
     player2->pieces_destroyed = 0;
 }
 
+// Sets a square to be invalid with no pieces on it
 void set_invalid(square * s){
 s->type = INVALID;
 s->stack = NULL;
@@ -54,14 +62,15 @@ s->bottom = NULL;
 s->num_pieces = 0;
 }
 
+// Sets a square valid but with no pieces on it
 void set_empty(square * s){
 s->type = VALID;
 s->stack = NULL;
 s->bottom = NULL;
-
 s->num_pieces = 0;
 }
 
+// Sets a square valid and with one green piece on it
 void set_green(square * s){
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
@@ -69,9 +78,9 @@ s->stack->p_color = GREEN;
 s->stack->next = NULL;
 s->num_pieces = 1;
 s->bottom = s->stack;
-
 }
 
+// Sets a square valid and with one red piece on it
 void set_red(square * s){
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
@@ -81,6 +90,7 @@ s->num_pieces = 1;
 s->bottom = s->stack;
 }
 
+// Initializes the board with the set functions
 void initialize_board(square board[8][8]) {
     for(int i=0; i< 8; i++){
         for(int j=0; j< 8; j++){
@@ -90,27 +100,21 @@ void initialize_board(square board[8][8]) {
                (i==6 && (j==0 || j==7)) ||
                (i==7 && (j==0 || j==1 || j==6 || j==7))) {
                 set_invalid(&board[i][j]);
-                board[i][j].num_pieces = 0;
             }
 
             else{
-                //squares with no pieces
+                // squares with no pieces
                 if(i==0 || i ==7 || j==0 || j == 7) {
                     set_empty(&board[i][j]);
-                    board[i][j].num_pieces = 0;
                 }
                 else{
-                    //squares with red pieces
+                    // squares with red pieces
                     if((i%2 == 1 && (j < 3 || j> 4)) || (i%2 == 0 && (j == 3 || j==4))) {
                         set_red(&board[i][j]);
-                        board[i][j].num_pieces = 1;
                     }
-
-                        //green squares
-                    else
-                    {
+                    // green squares
+                    else {
                         set_green(&board[i][j]);
-                        board[i][j].num_pieces = 1;
                     }
                 }
             }

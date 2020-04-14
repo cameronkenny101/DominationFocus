@@ -51,23 +51,24 @@ void move_piece(player *players, square board[8][8])
 
     printf("8 is up, 4 is left, 6 is right, 2 is down\n");
 
-    int correctPosition = 0, step, left = 0, right = 0, up = 0, down = 0, finish_row = 0, finish_column = 0, goBack;
+    int correctPosition = 0, step, left = 0, right = 0, up = 0, down = 0, finish_row = 0, finish_column = 0, i = 1;
     while(correctPosition == 0)
     {
-
-        for (int i = 1; i <= board[row][column].num_pieces; i++)
+        for (i = 1; i <= board[row][column].num_pieces; i++)
         {
             printf("%d Step : ", i);
             fgets(line, sizeof(line), stdin);
             sscanf(line, "%d", &step);
 
-
             while (step != 2 && step != 4 && step != 6 && step != 8) {
-                printf("Not valid move");
-                printf("%d Step : ", i);
-                fgets(line, sizeof(line), stdin);
-                sscanf(line, "%d", &step);
+                printf("Not a valid move. Please try again\n");
+                i = 1;
+                down = 0;
+                up = 0;
+                right = 0;
+                left = 0;
             }
+
             if (step == 2)
                 down++;
             if (step == 4)
@@ -84,6 +85,13 @@ void move_piece(player *players, square board[8][8])
         if(board[finish_row][finish_column].type == INVALID || finish_row < 0 || finish_row > 7 || finish_column < 0 || finish_column > 7)
         {
             printf("Moved to an invalid square. Try again\n");
+            down = 0;
+            up = 0;
+            right = 0;
+            left = 0;
+        }
+        else if(row == finish_row && column == finish_column) {
+            printf("Moved to the same square. Not a valid move!\n");
             down = 0;
             up = 0;
             right = 0;
