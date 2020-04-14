@@ -55,7 +55,7 @@ void initialize_players(player *player1, player *player2){
 }
 
 // Sets a square to be invalid with no pieces on it
-void set_invalid(square * s){
+void set_invalid(square * s) {
 s->type = INVALID;
 s->stack = NULL;
 s->bottom = NULL;
@@ -63,7 +63,7 @@ s->num_pieces = 0;
 }
 
 // Sets a square valid but with no pieces on it
-void set_empty(square * s){
+void set_empty(square * s) {
 s->type = VALID;
 s->stack = NULL;
 s->bottom = NULL;
@@ -71,7 +71,7 @@ s->num_pieces = 0;
 }
 
 // Sets a square valid and with one green piece on it
-void set_green(square * s){
+void set_green(square * s) {
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
 s->stack->p_color = GREEN;
@@ -81,7 +81,7 @@ s->bottom = s->stack;
 }
 
 // Sets a square valid and with one red piece on it
-void set_red(square * s){
+void set_red(square * s) {
 s->type = VALID;
 s->stack = (piece *) malloc (sizeof(piece));
 s->stack->p_color = RED;
