@@ -13,7 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/input_output.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/input_output.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_init.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/play_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/play_game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/player_movement.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_movement.h" afterDir="false" />
     </list>
@@ -94,7 +104,7 @@
       <workItem from="1586526695810" duration="13100000" />
       <workItem from="1586628332806" duration="4362000" />
       <workItem from="1586691337275" duration="1340000" />
-      <workItem from="1586783240775" duration="2446000" />
+      <workItem from="1586783240775" duration="4315000" />
     </task>
     <servers />
   </component>

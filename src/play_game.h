@@ -7,7 +7,7 @@
 
 #include "structs.h"
 
-void play_game(player player1, player player2, square board[8][8]); // function protoype
-void finish_screen(player winner, int turns); // function protoype
+void play_game(player player1, player player2, square board[8][8]); // function prototype
+void finish_screen(player winner, int turns); // function prototype
 
 #endif //DOMINATIONGAME_PLAY_GAME_H

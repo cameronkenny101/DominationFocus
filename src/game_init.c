@@ -11,11 +11,14 @@
 void initialize_players(player *player1, player *player2){
     int color = 0;
     int playerNumber = 0;
-    printf("Please enter name of Player %d : ", ++playerNumber);
+    char line[20];
+
+    printf("Please enter name of Player %d : ", ++playerNumber); // Takes in Players 1 name
     fgets(player1->player_name, 50, stdin);
 
     printf("\nEnter 1 to choose red, enter any other number to be green : ");
-    scanf("%d", &color);
+    fgets(line, sizeof(line), stdin);
+    sscanf(line, "%d", &color);
 
     if(color == 1) {
         player1->player_color = RED;
@@ -26,7 +29,6 @@ void initialize_players(player *player1, player *player2){
         printf("\nPlayer 1 choose Green!\n");
     }
 
-    while ((getchar()) != '\n');
     printf("\nPlease enter name of Player %d : ", ++playerNumber);
     fgets(player2->player_name, 49, stdin);
 
