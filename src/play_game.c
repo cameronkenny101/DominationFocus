@@ -85,7 +85,8 @@ void play_game(player player1, player player2, square board[8][8])
 
         if(player2.pieces_captured > 0) {
             printf("\nYou have %d pieces captured. Press 1 to place a captured piece on the board, press any other number to move a stack: ", player2.pieces_captured);
-            scanf("%d", &move);
+            fgets(line, sizeof(line), stdin);
+            sscanf(line, "%d", &move);
         }
         if(move == 1)
             position_captured_piece(&player2, board);
