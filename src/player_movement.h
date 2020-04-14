@@ -7,10 +7,10 @@
 
 #include "structs.h"
 
-void move_piece(player *players, square board[8][8]);
-void move_stack(square *from, square *to, player *players);
-void move_captured_piece(player *players, square *moveCapturedPiece);
-void position_captured_piece(player *players, square board[8][8]);
+void move_piece(player *players, square board[8][8]); // function protoype
+void move_stack(square *from, square *to, player *players); // function protoype
+void move_captured_piece(player *players, square *moveCapturedPiece); // function protoype
+void position_captured_piece(player *players, square board[8][8]); // function protoype
 
 
 

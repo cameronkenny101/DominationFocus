@@ -7,11 +7,10 @@
 
 #include "structs.h"
 
-void initialize_players(player *player1, player *player2);
-
-void initialize_board(square board[8][8]);
-void set_green(square * s);
-void set_red(square * s);
+void initialize_players(player *player1, player *player2); // function protoype
+void initialize_board(square board[8][8]); // function protoype
+void set_green(square * s); // function protoype
+void set_red(square * s); // function protoype
 
 
 #endif //DOMINATIONGAME_GAME_INIT_H
