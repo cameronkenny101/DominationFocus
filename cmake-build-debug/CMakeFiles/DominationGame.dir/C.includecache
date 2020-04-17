@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.c
+stdio.h
+-
+stdlib.h
+-
+game_init.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
+
+C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
+structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
+
 C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.c
 stdio.h
 -
