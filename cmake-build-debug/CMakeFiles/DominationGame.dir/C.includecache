@@ -6,15 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.c
+C:/Users/camek/Documents/GitHub/DominationFocus/src/OS_functions.h
+
+C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.c
 stdio.h
 -
-windows.h
--
-input_output.h
-C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
+play_game.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.h
+player_movement.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
+OS_functions.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/OS_functions.h
 
-C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.h
+structs.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
+
+C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
 structs.h
 C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
 

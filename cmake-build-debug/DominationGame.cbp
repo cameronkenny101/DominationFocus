@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/camek/Documents/GitHub/DominationFocus/src/OS_functions.c">
+			<Option target="DominationGame"/>
+		</Unit>
+		<Unit filename="C:/Users/camek/Documents/GitHub/DominationFocus/src/OS_functions.h">
+			<Option target="DominationGame"/>
+		</Unit>
 		<Unit filename="C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.c">
 			<Option target="DominationGame"/>
 		</Unit>

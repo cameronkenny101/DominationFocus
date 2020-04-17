@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include "play_game.h"
 #include "player_movement.h"
+#include "OS_functions.h"
 
 void play_game(player player1, player player2, square board[8][8])
 {
@@ -46,6 +47,11 @@ void play_game(player player1, player player2, square board[8][8])
 
         int move = 0, accept = 0;
         turns++; // Counts the number of turns each player makes
+
+        if(player1.player_color == RED)
+            red();
+        else
+            green();
 
         printf("Turn : %d\nPlayer 1 : %s", turns, player1.player_name);
         printf("You have captured %d pieces\n", player1.pieces_captured);
@@ -102,6 +108,11 @@ void play_game(player player1, player player2, square board[8][8])
             finish_screen(player1, turns);
             break;
         }
+
+        if(player2.player_color == RED)
+            red();
+        else
+            green();
 
         printf("Turn : %d\nPlayer 2 : %s", turns, player2.player_name);
         printf("You have captured %d pieces\n", player2.pieces_captured);

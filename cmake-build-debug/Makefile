@@ -122,6 +122,33 @@ DominationGame/fast:
 	$(MAKE) -f CMakeFiles\DominationGame.dir\build.make CMakeFiles/DominationGame.dir/build
 .PHONY : DominationGame/fast
 
+src/OS_functions.obj: src/OS_functions.c.obj
+
+.PHONY : src/OS_functions.obj
+
+# target to build an object file
+src/OS_functions.c.obj:
+	$(MAKE) -f CMakeFiles\DominationGame.dir\build.make CMakeFiles/DominationGame.dir/src/OS_functions.c.obj
+.PHONY : src/OS_functions.c.obj
+
+src/OS_functions.i: src/OS_functions.c.i
+
+.PHONY : src/OS_functions.i
+
+# target to preprocess a source file
+src/OS_functions.c.i:
+	$(MAKE) -f CMakeFiles\DominationGame.dir\build.make CMakeFiles/DominationGame.dir/src/OS_functions.c.i
+.PHONY : src/OS_functions.c.i
+
+src/OS_functions.s: src/OS_functions.c.s
+
+.PHONY : src/OS_functions.s
+
+# target to generate assembly for a file
+src/OS_functions.c.s:
+	$(MAKE) -f CMakeFiles\DominationGame.dir\build.make CMakeFiles/DominationGame.dir/src/OS_functions.c.s
+.PHONY : src/OS_functions.c.s
+
 src/game_init.obj: src/game_init.c.obj
 
 .PHONY : src/game_init.obj
@@ -266,6 +293,9 @@ help:
 	@echo ... DominationGame
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... src/OS_functions.obj
+	@echo ... src/OS_functions.i
+	@echo ... src/OS_functions.s
 	@echo ... src/game_init.obj
 	@echo ... src/game_init.i
 	@echo ... src/game_init.s

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/camek/Documents/GitHub/DominationFocus/src/OS_functions.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/OS_functions.c.obj"
   "C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/game_init.c.obj"
   "C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/input_output.c.obj"
   "C:/Users/camek/Documents/GitHub/DominationFocus/src/main.c" "C:/Users/camek/Documents/GitHub/DominationFocus/cmake-build-debug/CMakeFiles/DominationGame.dir/src/main.c.obj"

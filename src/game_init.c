@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "game_init.h"
+#include "OS_functions.h"
 
 
 // Initalizes the player with user input
@@ -12,6 +13,8 @@ void initialize_players(player *player1, player *player2){
     int color = 0;
     int playerNumber = 0;
     char line[20];
+
+    clear();
 
 
     printf("          __          ________ _      _____ ____  __  __ ______   _______ ____  \n"
@@ -39,12 +42,16 @@ void initialize_players(player *player1, player *player2){
     // If users enter 1 they are assigned to the red color
     if(color == 1) {
         player1->player_color = RED;
+        red();
         printf("\nPlayer 1 choose Red!\n");
+        clear();
     }
     // If user enters any other key they are assigned to green
     else {
         player1->player_color = GREEN;
+        green();
         printf("\nPlayer 1 choose Green!\n");
+        clear();
     }
 
     // Takes in Player 2 name
@@ -53,12 +60,16 @@ void initialize_players(player *player1, player *player2){
 
     // Assigns player color based on choice Player 1 made
     if(player1->player_color == RED) {
+        green();
         player2->player_color = GREEN;
         printf("\nPlayer 2 is Green!\n");
+        clear();
     }
     else {
+        red();
         player2->player_color = RED;
         printf("\nPlayer 2 is Red!\n");
+        clear();
     }
 
     // Initilizes the number of pieces captured and destroyed to 0 for each player
