@@ -43,23 +43,29 @@ void play_game(player player1, player player2, square board[8][8])
             break;
         }
 
-        int move = 0;
+        int move = 0, accept = 0;
         turns++; // Counts the number of turns each player makes
 
         printf("Turn : %d\nPlayer 1 : %s", turns, player1.player_name);
         printf("You have captured %d pieces\n", player1.pieces_captured);
         printf("You have destroyed %d pieces\n", player1.pieces_destroyed);
 
-        if((player1.player_color == RED && topIsRed == 0 && player1.pieces_captured > 0) || (player1.player_color == GREEN && topIsGreen == 0 && player1.pieces_captured > 0)) {
-            printf("There is no available stack to move. You must place one of your %d captured pieces", player1.pieces_captured);
-            position_captured_piece(&player1, board);
-        }
+        while(accept == 0) {
+            /* If a player has no stack to move but has pieces captured this forces the player to place a capture piece. Implemented this function to stop players from saying they
+            wanted to move a stack when no stack was available so would cause a dead screen with nothing to do causing the game to be in an unplayable game state */
+            if ((player1.player_color == RED && topIsRed == 0 && player1.pieces_captured > 0) || (player1.player_color == GREEN && topIsGreen == 0 && player1.pieces_captured > 0)) {
+                printf("There is no available stack to move. You must place one of your %d captured pieces", player1.pieces_captured);
+                position_captured_piece(&player1, board);
+                break;
+            }
 
-        // If player 1 has pieces captured they can choose to place a captured piece onto the board
-        if(player1.pieces_captured > 0) {
-            printf("\nYou have %d pieces captured. Press 1 to place a captured piece on the board, press any other ke to move a stack: ", player1.pieces_captured);
-            fgets(line, sizeof(line), stdin);
-            sscanf(line, "%d", &move);
+            // If player 1 has pieces captured they can choose to place a captured piece onto the board
+            if (player1.pieces_captured > 0) {
+                printf("\nYou have %d pieces captured. Press 1 to place a captured piece on the board, press any other ke to move a stack: ", player1.pieces_captured);
+                fgets(line, sizeof(line), stdin);
+                sscanf(line, "%d", &move);
+                accept = 1;
+            }
         }
 
         // If player presses 1 to place captured piece we call that function
@@ -97,13 +103,26 @@ void play_game(player player1, player player2, square board[8][8])
         printf("You have captured %d pieces\n", player2.pieces_captured);
         printf("You have destroyed %d pieces\n", player2.pieces_destroyed);
 
-        move = 0;
+        move = 0, accept = 0;
 
-        if(player2.pieces_captured > 0) {
-            printf("\nYou have %d pieces captured. Press 1 to place a captured piece on the board, press any other key to move a stack: ", player2.pieces_captured);
-            fgets(line, sizeof(line), stdin);
-            sscanf(line, "%d", &move);
+        while(accept == 0) {
+            /* If a player has no stack to move but has pieces captured this forces the player to place a capture piece. Implemented this function to stop players from saying they
+            wanted to move a stack when no stack was available so would cause a dead screen with nothing to do causing the game to be in an unplayable game state */
+            if ((player1.player_color == RED && topIsRed == 0 && player1.pieces_captured > 0) || (player1.player_color == GREEN && topIsGreen == 0 && player1.pieces_captured > 0)) {
+                printf("There is no available stack to move. You must place one of your %d captured pieces", player1.pieces_captured);
+                position_captured_piece(&player1, board);
+                break;
+            }
+
+            // If player 1 has pieces captured they can choose to place a captured piece onto the board
+            if (player1.pieces_captured > 0) {
+                printf("\nYou have %d pieces captured. Press 1 to place a captured piece on the board, press any other ke to move a stack: ", player1.pieces_captured);
+                fgets(line, sizeof(line), stdin);
+                sscanf(line, "%d", &move);
+                accept = 1;
+            }
         }
+
         if(move == 1)
             position_captured_piece(&player2, board);
         else

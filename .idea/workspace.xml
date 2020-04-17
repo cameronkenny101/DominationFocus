@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/play_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +93,7 @@
       <workItem from="1586628332806" duration="4362000" />
       <workItem from="1586691337275" duration="1340000" />
       <workItem from="1586783240775" duration="20957000" />
+      <workItem from="1587053565972" duration="3321000" />
     </task>
     <servers />
   </component>
@@ -149,10 +149,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586277805970" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1586783252570">
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587053655282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586783252570" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587053655282" />
     <state x="330" y="169" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586277646137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
