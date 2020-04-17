@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/input_output.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +95,7 @@
       <workItem from="1586628332806" duration="4362000" />
       <workItem from="1586691337275" duration="1340000" />
       <workItem from="1586783240775" duration="20957000" />
-      <workItem from="1587053565972" duration="7243000" />
+      <workItem from="1587053565972" duration="9473000" />
     </task>
     <servers />
   </component>

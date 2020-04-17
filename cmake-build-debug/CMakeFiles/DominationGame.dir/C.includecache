@@ -6,31 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.c
+C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.c
 stdio.h
 -
-stdlib.h
+windows.h
 -
-game_init.h
-C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
+input_output.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
 
-C:/Users/camek/Documents/GitHub/DominationFocus/src/game_init.h
-structs.h
-C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
-
-C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.c
-stdio.h
--
-play_game.h
-C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.h
-player_movement.h
-C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
-
-C:/Users/camek/Documents/GitHub/DominationFocus/src/play_game.h
-structs.h
-C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
-
-C:/Users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
+C:/Users/camek/Documents/GitHub/DominationFocus/src/input_output.h
 structs.h
 C:/Users/camek/Documents/GitHub/DominationFocus/src/structs.h
 

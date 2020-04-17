@@ -13,6 +13,7 @@ void initialize_players(player *player1, player *player2){
     int playerNumber = 0;
     char line[20];
 
+
     printf("          __          ________ _      _____ ____  __  __ ______   _______ ____  \n"
                    "          \\ \\        / /  ____| |    / ____/ __ \\|  \\/  |  ____| |__   __/ __ \\  \n"
                    "           \\ \\  /\\  / /| |__  | |   | |   | |  | | \\  / | |__       | | | |  | | \n"
