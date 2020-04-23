@@ -45,7 +45,7 @@ void blue(void) {
     SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
 }
 #else
-void clear(void) {
+void blue(void) {
     printf("\x1B[34m");
 }
 #endif
