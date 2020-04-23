@@ -4,6 +4,7 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "play_game.h"
 #include "player_movement.h"
 #include "OS_functions.h"
@@ -41,7 +42,7 @@ void play_game(player player1, player player2, square board[8][8])
         // If the player 1 cant move before turn then we pass player 2 into win screen function
         if(topIsRed == 0 && player1.pieces_captured == 0)
         {
-            finish_screen(player2, turns);
+            finish_screen(player2, turns, board);
             break;
         }
 
@@ -105,7 +106,7 @@ void play_game(player player1, player player2, square board[8][8])
         // If the player 2 cant move before turn then we pass player 1 into win screen function
         if((topIsRed == 0 || topIsGreen == 0) && player2.pieces_captured == 0)
         {
-            finish_screen(player1, turns);
+            finish_screen(player1, turns, board);
             break;
         }
 
@@ -149,17 +150,36 @@ void play_game(player player1, player player2, square board[8][8])
     } while(topIsRed == 1 && topIsGreen == 1);
 }
 
-void finish_screen(player winner, int turns)
+void finish_screen(player winner, int turns, square board[8][8])
 {
     printf("\n\n\n\n ************** GAME OVER **************\n");
-    printf("Player : %s won!\n", winner.player_name);
-    printf("It took you %d turns to win\n", turns);
+    printf("Player : %s won!\n", winner.player_name); // Prints the winners name
+    printf("It took you %d turns to win\n", turns); // Prints the total turns it took to win
 
     if(winner.player_color == RED)
         printf("%s won as the red color!\n", winner.player_name);
     else
         printf("%s won as the green color!\n", winner.player_name);
 
-    printf("You finished the game with %d captured pieces", winner.pieces_captured);
-    printf("You finished the game destroying %d pieces", winner.pieces_destroyed);
+    printf("You finished the game with %d captured pieces\n", winner.pieces_captured);
+    printf("You finished the game destroying %d pieces\n", winner.pieces_destroyed);
+
+    for(int i = 0; i < 8; i++) {
+        for(int j = 0; j < 8; j++) {
+            if(board[i][j].num_pieces > 1)
+                free_memory(&board[i][j]);
+        }
+    }
+
+
+}
+
+void free_memory(square *pieces) {
+    piece *curr = pieces->stack;
+    piece *temp = pieces->stack->next;
+    while(temp != NULL) {
+        free(curr);
+        curr = temp;
+        temp = curr->next;
+    }
 }

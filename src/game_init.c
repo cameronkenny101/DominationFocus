@@ -35,7 +35,7 @@ void initialize_players(player *player1, player *player2){
     fgets(player1->player_name, 30, stdin);
 
     // Takes in user color with number input. Use fgets and sscanf as if a letter is entered it clears it out of the buffer, meaning no infinite loops
-    printf("\nEnter 1 to choose red, enter any other number to be green : ");
+    printf("\n\nEnter 1 to choose red, enter any other number to be green : ");
     fgets(line, sizeof(line), stdin);
     sscanf(line, "%d", &color);
 
