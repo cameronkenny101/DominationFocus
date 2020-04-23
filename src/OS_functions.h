@@ -7,6 +7,6 @@
 
 void green(void);
 void red(void);
-void clear(void);
+void blue(void);
 
 #endif //DOMINATIONGAME_OS_FUNCTIONS_H

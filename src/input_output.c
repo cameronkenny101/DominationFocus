@@ -8,7 +8,7 @@
 
 void print_board(square board[8][8])
 {
-    clear();
+    blue();
     printf("\n    **********  THE BOARD  **********  \n");
     printf("  0     1    2    3    4    5    6    7   \n");
     for(int i = 0; i < 8; i++)
@@ -25,12 +25,12 @@ void print_board(square board[8][8])
                         if(board[i][j].stack->p_color == GREEN) {
                             green();
                             printf("| G %d", board[i][j].num_pieces);
-                            clear();
+                            blue();
                         }
                         else {
                             red();
                             printf("| R %d", board[i][j].num_pieces);
-                            clear();
+                            blue();
                         }
                     }
                 }

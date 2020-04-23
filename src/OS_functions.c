@@ -15,9 +15,8 @@
         SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
 }
 #else
-#define GRN   "\x1B[32m"
-    void green(void) {
-        printf(GRN);
+void green(void) {
+    printf("\x1B[32m");
 }
 #endif
 
@@ -31,15 +30,14 @@ void red(void) {
     SetConsoleTextAttribute(hConsole, FOREGROUND_RED);
 }
 #else
-#define RED   "\x1B[31m"
 void red(void) {
-    printf(RED);
+    printf("\x1B[31m");
 }
 #endif
 
 #ifdef _WIN32
 #include <windows.h>
-void clear(void) {
+void blue(void) {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
 
@@ -47,9 +45,8 @@ void clear(void) {
     SetConsoleTextAttribute(hConsole, FOREGROUND_BLUE);
 }
 #else
-#define BLU   "\x1B[34m"
 void clear(void) {
-    printf("BLU")
+    printf("\x1B[34m");
 }
 #endif
 
