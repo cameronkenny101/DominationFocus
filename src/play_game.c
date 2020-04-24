@@ -178,10 +178,8 @@ void finish_screen(player winner, int turns, square board[8][8]) {
 
 void free_memory(square *pieces) {
     piece *curr = pieces->stack;
-    piece *temp = pieces->stack->next;
     while(curr != NULL) {
         free(curr);
-        curr = temp;
-        temp = curr->next;
+        curr = curr->next;
     }
 }
