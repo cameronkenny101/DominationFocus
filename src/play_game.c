@@ -11,13 +11,14 @@
 
 void play_game(player player1, player player2, square board[8][8])
 {
-    int topIsRed, topIsGreen;
+    int topIsRed, topIsGreen, accept;
     int turns = 0;
     char line[20];
 
     do {
         topIsRed = 0;
         topIsGreen = 0;
+        accept = 0;
         // Player 1
         // checks through the board to see if a stack can be moved. If not win conditions may have been met depending on number of captured pieces
         for (int i = 0; i < 8; i++) {
@@ -46,7 +47,7 @@ void play_game(player player1, player player2, square board[8][8])
             break;
         }
 
-        int move = 0, accept = 0;
+        int move = 0;
         turns++; // Counts the number of turns each player makes
 
         if(player1.player_color == RED)
@@ -84,8 +85,10 @@ void play_game(player player1, player player2, square board[8][8])
                 move_piece(&player1, board);
         }
 
+
         topIsRed = 0;
         topIsGreen = 0;
+        accept = 0;
         // Player 2
         // Again check through board to see if stack can be moved
         for (int i = 0; i < 8; i++) {
@@ -119,18 +122,18 @@ void play_game(player player1, player player2, square board[8][8])
         printf("You have captured %d pieces\n", player2.pieces_captured);
         printf("You have destroyed %d pieces\n", player2.pieces_destroyed);
 
-        move = 0, accept = 0;
+        move = 0;
 
         /* If a player has no stack to move but has pieces captured this forces the player to place a capture piece. Implemented this function to stop players from saying they
         wanted to move a stack when no stack was available so would cause a dead screen with nothing to do causing the game to be in an unplayable game state */
         if ((player2.player_color == RED && topIsRed == 0 && player2.pieces_captured > 0) || (player2.player_color == GREEN && topIsGreen == 0 && player2.pieces_captured > 0)) {
-            printf("There is no available stack to move. You must place one of your %d captured pieces", player2.pieces_captured);
+            printf("There is no available stack to move. You must place one of your %d captured pieces\n", player2.pieces_captured);
             position_captured_piece(&player2, board);
             accept = 1;
         }
 
-        // If player 1 has pieces captured they can choose to place a captured piece onto the board
-        else if (player1.pieces_captured > 0) {
+        // If player 2 has pieces captured they can choose to place a captured piece onto the board
+        else if (player2.pieces_captured > 0) {
             printf("\nYou have %d pieces captured. Press 1 to place a captured piece on the board, press any other key to move a stack: ", player2.pieces_captured);
             fgets(line, sizeof(line), stdin);
             sscanf(line, "%d", &move);
@@ -147,11 +150,10 @@ void play_game(player player1, player player2, square board[8][8])
                 move_piece(&player2, board);
         }
 
-    } while(topIsRed == 1 && topIsGreen == 1);
+    } while((topIsRed == 1 && topIsGreen == 1) || accept == 1);
 }
 
-void finish_screen(player winner, int turns, square board[8][8])
-{
+void finish_screen(player winner, int turns, square board[8][8]) {
     printf("\n\n\n\n ************** GAME OVER **************\n");
     printf("Player : %s won!\n", winner.player_name); // Prints the winners name
     printf("It took you %d turns to win\n", turns); // Prints the total turns it took to win
@@ -166,18 +168,18 @@ void finish_screen(player winner, int turns, square board[8][8])
 
     for(int i = 0; i < 8; i++) {
         for(int j = 0; j < 8; j++) {
-            if(board[i][j].num_pieces > 1)
+            if(board[i][j].type == INVALID)
+                continue;
+            else if(board[i][j].num_pieces > 1)
                 free_memory(&board[i][j]);
         }
     }
-
-
 }
 
 void free_memory(square *pieces) {
     piece *curr = pieces->stack;
     piece *temp = pieces->stack->next;
-    while(temp != NULL) {
+    while(curr != NULL) {
         free(curr);
         curr = temp;
         temp = curr->next;

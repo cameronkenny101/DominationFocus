@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/DominationGame.dir/src/main.c.o CMakeFiles/DominationGame.dir/src/game_init.c.o CMakeFiles/DominationGame.dir/src/input_output.c.o CMakeFiles/DominationGame.dir/src/player_movement.c.o CMakeFiles/DominationGame.dir/src/play_game.c.o CMakeFiles/DominationGame.dir/src/OS_functions.c.o  -o DominationGame 

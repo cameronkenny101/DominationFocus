@@ -62,6 +62,9 @@ void move_piece(player *players, square board[8][8])
 
             while (step != 2 && step != 4 && step != 6 && step != 8) {
                 printf("Not a valid move. Please try again\n");
+                printf("%d Step : ", i);
+                fgets(line, sizeof(line), stdin);
+                sscanf(line, "%d", &step);
                 i = 1;
                 down = 0;
                 up = 0;
@@ -105,13 +108,11 @@ void move_piece(player *players, square board[8][8])
     print_board(board);
 }
 
-void position_captured_piece(player *players, square board[8][8])
-{
+void position_captured_piece(player *players, square board[8][8]) {
     int acceptMove = 0, row = 0, column = 0;
     char line[20];
 
-    while(acceptMove == 0)
-    {
+    while(acceptMove == 0) {
         printf("Please type the row you would like to move your piece to : ");
         fgets(line, sizeof(line), stdin);
         sscanf(line, "%d", &row);
@@ -166,8 +167,7 @@ void cut_stack(square *to, player *players) {
     to->num_pieces = 5;
 }
 
-void move_captured_piece(player *players, square *moveCapturedPiece)
-{
+void move_captured_piece(player *players, square *moveCapturedPiece) {
     if(moveCapturedPiece->num_pieces == 0) {
         players->pieces_captured--;
         if(players->player_color == RED)

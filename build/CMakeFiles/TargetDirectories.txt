@@ -1,0 +1,3 @@
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/build/CMakeFiles/edit_cache.dir
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/build/CMakeFiles/DominationGame.dir

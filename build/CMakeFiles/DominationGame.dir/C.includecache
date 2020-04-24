@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/OS_functions.h
+
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/play_game.c
+stdio.h
+-
+stdlib.h
+-
+play_game.h
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/play_game.h
+player_movement.h
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
+OS_functions.h
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/OS_functions.h
+
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/play_game.h
+structs.h
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/structs.h
+
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/player_movement.h
+structs.h
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/structs.h
+
+/mnt/c/users/camek/Documents/GitHub/DominationFocus/src/structs.h
+

@@ -12,7 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/play_game.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DominationGame.dir/src/player_movement.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/play_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player_movement.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_movement.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +99,8 @@
       <workItem from="1586691337275" duration="1340000" />
       <workItem from="1586783240775" duration="20957000" />
       <workItem from="1587053565972" duration="16479000" />
-      <workItem from="1587668605219" duration="5445000" />
+      <workItem from="1587668605219" duration="11882000" />
+      <workItem from="1587729535512" duration="7072000" />
     </task>
     <servers />
   </component>
@@ -149,10 +156,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586277805970" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587668606609">
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587729570123">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587668606609" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587729570123" />
     <state x="330" y="169" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586277646137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
