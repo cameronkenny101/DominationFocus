@@ -36,40 +36,33 @@ void move_piece(player *players, square board[8][8])
         else
             square_color = 2; // if coordinates are green set to 2
 
-        if(players_color != square_color)
+        if(players_color != square_color) // If you select a piece does not belong to you
         {
             printf("You selected a piece that doesnt belong to you. Please select again\n");
-            continue;
+            continue; // While loop runs from start again
         }
 
         printf("You selected the co-ordinates (row : %d , column : %d). Press 1 to continue or any other number to pick new co-ordinates : ", row, column);
         fgets(line, sizeof(line), stdin);
         sscanf(line, "%d", &accept);
         if(accept == 1)
-            cont = 1;
+            cont = 1; // breaks out of the while loop when player accepts the move they made
     }
 
-    printf("8 is up, 4 is left, 6 is right, 2 is down\n");
+    printf("8 is up, 4 is left, 6 is right, 2 is down\n"); // movement
 
     int correctPosition = 0, step, left = 0, right = 0, up = 0, down = 0, finish_row = 0, finish_column = 0, i = 1;
-    while(correctPosition == 0)
-    {
-        for (i = 1; i <= board[row][column].num_pieces; i++)
-        {
+    while(correctPosition == 0) {
+        for (i = 1; i <= board[row][column].num_pieces; i++) { // Player moves as many steps as the size of the stack
             printf("%d Step : ", i);
             fgets(line, sizeof(line), stdin);
             sscanf(line, "%d", &step);
 
-            while (step != 2 && step != 4 && step != 6 && step != 8) {
+            while (step != 2 && step != 4 && step != 6 && step != 8) { // If step value not valid asks again until it is valid
                 printf("Not a valid move. Please try again\n");
                 printf("%d Step : ", i);
                 fgets(line, sizeof(line), stdin);
                 sscanf(line, "%d", &step);
-                i = 1;
-                down = 0;
-                up = 0;
-                right = 0;
-                left = 0;
             }
 
             if (step == 2)
@@ -82,11 +75,10 @@ void move_piece(player *players, square board[8][8])
                 up++;
         }
 
-        finish_row = row - up + down;
-        finish_column = column - left + right;
+        finish_row = row - up + down; // co-ordinate for row
+        finish_column = column - left + right; // co-ordinate for column
 
-        if(board[finish_row][finish_column].type == INVALID || finish_row < 0 || finish_row > 7 || finish_column < 0 || finish_column > 7)
-        {
+        if(board[finish_row][finish_column].type == INVALID || finish_row < 0 || finish_row > 7 || finish_column < 0 || finish_column > 7) {
             printf("Moved to an invalid square. Try again\n");
             down = 0;
             up = 0;
@@ -101,11 +93,11 @@ void move_piece(player *players, square board[8][8])
             left = 0;
         }
         else
-            correctPosition++;
+            correctPosition++; // exit while loop if player chooses a correct position
     }
 
-    move_stack(&board[row][column], &board[finish_row][finish_column], players);
-    print_board(board);
+    move_stack(&board[row][column], &board[finish_row][finish_column], players); // function for moving stack
+    print_board(board); // then print board
 }
 
 void position_captured_piece(player *players, square board[8][8]) {

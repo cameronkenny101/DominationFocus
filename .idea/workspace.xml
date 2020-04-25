@@ -13,10 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/src/play_game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/src/play_game.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DominationGame" beforeDir="false" afterPath="$PROJECT_DIR$/build/DominationGame" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/valgrind.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/valgrind.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/play_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/player_movement.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_movement.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +98,7 @@
       <workItem from="1587053565972" duration="16479000" />
       <workItem from="1587668605219" duration="11882000" />
       <workItem from="1587729535512" duration="10190000" />
-      <workItem from="1587828872531" duration="699000" />
+      <workItem from="1587828872531" duration="2931000" />
     </task>
     <servers />
   </component>

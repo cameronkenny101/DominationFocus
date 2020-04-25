@@ -9,6 +9,7 @@
 #include "player_movement.h"
 #include "OS_functions.h"
 
+// Function for controlling the game and win condition
 void play_game(player player1, player player2, square board[8][8])
 {
     int topIsRed, topIsGreen, accept;
@@ -153,6 +154,7 @@ void play_game(player player1, player player2, square board[8][8])
     } while((topIsRed == 1 && topIsGreen == 1) || accept == 1);
 }
 
+// Function for finish screen of game
 void finish_screen(player winner, int turns, square board[8][8]) {
     printf("\n\n\n\n ************** GAME OVER **************\n");
     printf("Player : %s won!\n", winner.player_name); // Prints the winners name
@@ -171,16 +173,17 @@ void finish_screen(player winner, int turns, square board[8][8]) {
         for(int j = 0; j < 8; j++) {
             if(board[i][j].type == INVALID)
                 continue;
-            else if(board[i][j].num_pieces > 1)
+            else if(board[i][j].num_pieces >= 1)
                 free_memory(&board[i][j]);
         }
     }
 }
 
+// Function for freeing memory
 void free_memory(square *pieces) {
-    piece *curr = pieces->stack; 
-    while(curr != NULL) {
-        free(curr);
-        curr = curr->next;
+    piece *curr = pieces->stack; // Creates a pointer from piece struct and lets it equal to stack
+    while(curr != NULL) { // If curr is not null
+        free(curr); // free curr
+        curr = curr->next; // curr is equal to next pointer after curr
     }
 }
