@@ -12,10 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/OS_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/OS_functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OS_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/OS_functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/input_output.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/play_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/play_game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player_movement.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_movement.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/player_movement.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/player_movement.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <workItem from="1587053565972" duration="16479000" />
       <workItem from="1587668605219" duration="11882000" />
       <workItem from="1587729535512" duration="10190000" />
-      <workItem from="1587828872531" duration="5029000" />
+      <workItem from="1587828872531" duration="7205000" />
     </task>
     <servers />
   </component>

@@ -5,8 +5,8 @@
 #ifndef DOMINATIONGAME_OS_FUNCTIONS_H
 #define DOMINATIONGAME_OS_FUNCTIONS_H
 
-void green(void);
-void red(void);
-void blue(void);
+void green(void); // function prototype
+void red(void); // function prototype
+void blue(void); // function prototype
 
 #endif //DOMINATIONGAME_OS_FUNCTIONS_H

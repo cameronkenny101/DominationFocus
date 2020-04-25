@@ -14,7 +14,7 @@ void initialize_players(player *player1, player *player2){
     int playerNumber = 0;
     char line[20];
 
-    blue();
+    blue(); // Text is set to blue
 
 
     printf("          __          ________ _      _____ ____  __  __ ______   _______ ____  \n"
@@ -49,9 +49,9 @@ void initialize_players(player *player1, player *player2){
     // If user enters any other key they are assigned to green
     else {
         player1->player_color = GREEN;
-        green();
+        green(); // Text is set to green
         printf("\nPlayer 1 choose Green!\n");
-        blue();
+        blue(); // Text is set to blue
     }
 
     // Takes in Player 2 name
@@ -60,16 +60,16 @@ void initialize_players(player *player1, player *player2){
 
     // Assigns player color based on choice Player 1 made
     if(player1->player_color == RED) {
-        green();
+        green(); // Text is set to green
         player2->player_color = GREEN;
         printf("\nPlayer 2 is Green!\n");
-        blue();
+        blue(); // Text is set to blue
     }
     else {
-        red();
+        red(); // Text is set to red
         player2->player_color = RED;
         printf("\nPlayer 2 is Red!\n");
-        blue();
+        blue(); // Text is set to blue
     }
 
     // Initilizes the number of pieces captured and destroyed to 0 for each player

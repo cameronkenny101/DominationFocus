@@ -52,9 +52,9 @@ void play_game(player player1, player player2, square board[8][8])
         turns++; // Counts the number of turns each player makes
 
         if(player1.player_color == RED)
-            red();
+            red(); // Text is set to red
         else
-            green();
+            green(); // Text is set to green
 
         printf("\n\n\n\nTurn : %d\nPlayer 1 : %s", turns, player1.player_name);
         printf("You have captured %d pieces\n", player1.pieces_captured);
@@ -115,9 +115,9 @@ void play_game(player player1, player player2, square board[8][8])
         }
 
         if(player2.player_color == RED)
-            red();
+            red(); // Text is set to red
         else
-            green();
+            green(); // Text is set to green
 
         printf("\n\n\n\nTurn : %d\nPlayer 2 : %s", turns, player2.player_name);
         printf("You have captured %d pieces\n", player2.pieces_captured);
