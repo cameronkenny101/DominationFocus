@@ -159,13 +159,14 @@ void finish_screen(player winner, int turns, square board[8][8]) {
     printf("It took you %d turns to win\n", turns); // Prints the total turns it took to win
 
     if(winner.player_color == RED)
-        printf("%s won as the red color!\n", winner.player_name);
+        printf("%s won as the red color!\n", winner.player_name); // Prints the winners color
     else
-        printf("%s won as the green color!\n", winner.player_name);
+        printf("%s won as the green color!\n", winner.player_name); // Prints the winners color
 
-    printf("You finished the game with %d captured pieces\n", winner.pieces_captured);
-    printf("You finished the game destroying %d pieces\n", winner.pieces_destroyed);
+    printf("You finished the game with %d captured pieces\n", winner.pieces_captured); // Prints the number of pieces the player has by the end of the game
+    printf("You finished the game destroying %d pieces\n", winner.pieces_destroyed); // Prints the number of pieces a player destroyed
 
+    // Frees up the memory used from the stacks
     for(int i = 0; i < 8; i++) {
         for(int j = 0; j < 8; j++) {
             if(board[i][j].type == INVALID)
@@ -177,7 +178,7 @@ void finish_screen(player winner, int turns, square board[8][8]) {
 }
 
 void free_memory(square *pieces) {
-    piece *curr = pieces->stack;
+    piece *curr = pieces->stack; 
     while(curr != NULL) {
         free(curr);
         curr = curr->next;

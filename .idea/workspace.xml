@@ -98,7 +98,8 @@
       <workItem from="1586783240775" duration="20957000" />
       <workItem from="1587053565972" duration="16479000" />
       <workItem from="1587668605219" duration="11882000" />
-      <workItem from="1587729535512" duration="9975000" />
+      <workItem from="1587729535512" duration="10190000" />
+      <workItem from="1587828872531" duration="699000" />
     </task>
     <servers />
   </component>
@@ -154,10 +155,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586277805970" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587729570123">
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587828914588">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587729570123" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587828914588" />
     <state x="330" y="169" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586277646137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
