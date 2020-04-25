@@ -183,7 +183,8 @@ void finish_screen(player winner, int turns, square board[8][8]) {
 void free_memory(square *pieces) {
     piece *curr = pieces->stack; // Creates a pointer from piece struct and lets it equal to stack
     while(curr != NULL) { // If curr is not null
-        free(curr); // free curr
+        piece *temp = curr; // Create a temp to free the piece
         curr = curr->next; // curr is equal to next pointer after curr
+        free(temp); // free temp
     }
 }

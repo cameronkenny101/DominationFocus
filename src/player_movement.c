@@ -141,63 +141,64 @@ void move_stack(square *from, square *to, player *players) {
 
 }
 
+// Function for cutting stack
 void cut_stack(square *to, player *players) {
-    piece *curr = to->bottom->next;
+    piece *curr = to->bottom->next; // Curr is set to the 6th pointer in list
 
     while(curr != NULL) {
-        piece *temp = curr;
-        curr = curr->next;
-        if(temp->p_color == players->player_color)
+        piece *temp = curr; // temp set to curr
+        curr = curr->next; // curr is set to the next pointer in list
+        if(temp->p_color == players->player_color) // if piece is same as players color
         {
-            players->pieces_captured++;
-            free(temp);
+            players->pieces_captured++; // Increment pieces captured
+            free(temp); // free temp
         }
         else {
-            players->pieces_destroyed++;
-            free(temp);
+            players->pieces_destroyed++; // Increment pieces destroyed
+            free(temp); // free temp
         }
     }
 
-    to->stack->next->next->next->next->next = NULL;
-    to->num_pieces = 5;
+    to->stack->next->next->next->next->next = NULL; // 6th pointer is set to null
+    to->num_pieces = 5; // number of pieces set to 5
 }
 
+// Function for moving captured piece
 void move_captured_piece(player *players, square *moveCapturedPiece) {
-    if(moveCapturedPiece->num_pieces == 0) {
-        players->pieces_captured--;
-        if(players->player_color == RED)
-            set_red(moveCapturedPiece);
+    if(moveCapturedPiece->num_pieces == 0) { // If there is no pieces on square
+        players->pieces_captured--; // Decrement the number of pieces captured
+        if(players->player_color == RED) // if player is red
+            set_red(moveCapturedPiece); // set the square to be red
         else
-            set_green(moveCapturedPiece);
+            set_green(moveCapturedPiece); // set the square to be green
     }
     else {
-        piece * curr;
+        piece *curr; // Create pointer for stack called curr
+        curr = moveCapturedPiece->stack; // curr is set to stack
+        moveCapturedPiece->stack = (piece *) malloc (sizeof(piece)); // mallocs stack
+        players->pieces_captured--; // Decrement the number of pieces captured
+        moveCapturedPiece->num_pieces++; // Number of pieces on square is incremented
 
-        curr = moveCapturedPiece->stack;
-        moveCapturedPiece->stack = (piece *) malloc (sizeof(piece));
-        players->pieces_captured--;
-        moveCapturedPiece->num_pieces++;
-
-        if(players->player_color == RED)
+        if(players->player_color == RED) // Sets color of top piece
             moveCapturedPiece->stack->p_color = RED;
         else
             moveCapturedPiece->stack->p_color = GREEN;
 
-        moveCapturedPiece->stack->next = curr;
+        moveCapturedPiece->stack->next = curr; // next value is equal to curr
 
-        if (moveCapturedPiece->num_pieces == 6) {
+        if (moveCapturedPiece->num_pieces == 6) { // if a piece is put on a stack of 5 the number of pieces on square is six so we cut the stack here
 
-            moveCapturedPiece->bottom = moveCapturedPiece->stack->next->next->next->next;
+            moveCapturedPiece->bottom = moveCapturedPiece->stack->next->next->next->next; // ste bottom to the fifth pointer in list
 
-            if (moveCapturedPiece->bottom->next->p_color == players->player_color) {
-                players->pieces_captured++;
-                moveCapturedPiece->num_pieces--;
-                free(moveCapturedPiece->bottom->next);
+            if (moveCapturedPiece->bottom->next->p_color == players->player_color) { // if piece is same as players color
+                players->pieces_captured++; // Increment the number of pieces captured
+                moveCapturedPiece->num_pieces--; // Number of pieces on square set back to five
+                free(moveCapturedPiece->bottom->next); // free the 6th pointer in list
             }
             else {
-                players->pieces_destroyed++;
-                moveCapturedPiece->num_pieces--;
-                free(moveCapturedPiece->bottom->next);
+                players->pieces_destroyed++; // Increment the number of pieces destroyed
+                moveCapturedPiece->num_pieces--; // Number of pieces on square set back to five
+                free(moveCapturedPiece->bottom->next); // free the 6th pointer in list
             }
 
         }

@@ -11,7 +11,7 @@ void move_piece(player *players, square board[8][8]); // function prototype
 void move_stack(square *from, square *to, player *players); // function prototype
 void move_captured_piece(player *players, square *moveCapturedPiece); // function prototype
 void position_captured_piece(player *players, square board[8][8]); // function prototype
-void cut_stack(square *to, player *player);
+void cut_stack(square *to, player *player); // function prototype
 
 
 
