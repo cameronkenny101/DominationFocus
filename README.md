@@ -1,2 +1,15 @@
-# DominationFocus
- Board game for software engineering
+# Domination
+
+# Cameron Kenny – 19340616
+
+# Initializing Game :
+In the first week of the project I worked on implementing the structs and using resources to print the board and correctly initialize the board, its squares and the pieces. I implemented this into my clion project. I then added the code to initialize the player. When initializing the player I pass in both player structs and initialize both of them at the same time. I made sure to use fgets and sscanf so I would not get an infinite loop if the user did not enter in information correctly. I then added a bottom pointer in my square struct and also added other important details like pieces captured and pieces destroyed as I would be using them later on.
+
+# Moving Pieces :
+In week two I started working with user input even more heavily. I began to work on functions to move a piece. This consisted of me asking for user to enter co-ordinates of the piece they want to move and then using the movement keys (8, 6, 4, 2) to either move up, down, left or right. As I was taking user input I had to error check and make sure the player didn’t move to an invalid square or choose a piece that did not belong to them. To do this I used multiple if statements. Once a player could choose a piece they wanted to move, and entered where they wanted to move to I began to work on a function for putting a piece on another piece. To do this I passed the address of the specific square on the board and then used linked list to move pieces. Then I made sure the board was reprinted and everything was working correctly.
+
+# Cutting Stacks and Moving Captured Pieces :
+In week three I started to implement functionality that would stop stacks from being larger than five. To do this I checked if a stack was larger than five and if it was it was passed in to a cut stack function which cut the stack piece by piece and allocated if the piece should be captured or destroyed depending on the ENUM color of the player and the ENUM color of the piece. Inside this function I would also free the piece to avoid having memory leaks. Once this was implemented correctly I added a question to ask a player if they wanted to place down a captured piece. This question would only appear if they had at least one captured piece. I then added a function to place a captured piece if they wanted to. This function took the co-ordinates of where they wanted to move too. This function of course made sure the player could only choose a valid position. When a valid position was chosen, the address of that squares location was passed into another function which would malloc a piece.
+
+# Win Condition and Memory Leaks :
+In week four I worked on computing a win condition. The win condition I was working too implement was a player could not move a piece and they could did not have any captured pieces left to place. Once a win condition was computed I began to work on a finish screen. The finish screen prints the winners name, the color they played with, the number of turns it took them to win, the number of pieces they had captured, and the number of pieces they destroyed. Then after that I freed up each piece to avoid having any memory leaks.
