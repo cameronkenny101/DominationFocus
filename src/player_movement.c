@@ -8,6 +8,7 @@
 #include "input_output.h"
 #include "game_init.h"
 
+// Function for moving piece
 void move_piece(player *players, square board[8][8])
 {
     int cont = 0, row = 0, column = 0, accept, players_color = 0, square_color = 0;
@@ -100,6 +101,7 @@ void move_piece(player *players, square board[8][8])
     print_board(board); // then print board
 }
 
+// Function for positioning a captured piece
 void position_captured_piece(player *players, square board[8][8]) {
     int acceptMove = 0, row = 0, column = 0;
     char line[20];
@@ -112,28 +114,29 @@ void position_captured_piece(player *players, square board[8][8]) {
         fgets(line, sizeof(line), stdin);
         sscanf(line, "%d", &column);
 
-        if(board[row][column].type == VALID && column > -1 && column < 8 && row > -1 && row < 8)
+        if(board[row][column].type == VALID && column > -1 && column < 8 && row > -1 && row < 8) // If position is valid exit while loop
             acceptMove = 1;
         else
             printf("Invalid move, Try Again!\n");
     }
 
-    move_captured_piece(players, &board[row][column]);
-    print_board(board);
+    move_captured_piece(players, &board[row][column]); // Moves captured piece
+    print_board(board); // Prints board
 }
 
+// Function for moving stack
 void move_stack(square *from, square *to, player *players) {
-    from->bottom->next = to->stack;
-    to->stack = from->stack;
+    from->bottom->next = to->stack; // Effectively places the from stack onto the to stack
+    to->stack = from->stack; // Then stets the top of to to now be the top of from stack
     if (to->bottom == NULL)
-        to->bottom = from->bottom;
-    from->stack = NULL;
-    from->bottom = NULL;
-    to->num_pieces += from->num_pieces;
-    from->num_pieces = 0;
+        to->bottom = from->bottom;  // Sets the bottom pointer
+    from->stack = NULL; // Sets the from stack to be null
+    from->bottom = NULL; // Therefore sets the from bottom pointer to be null to be null
+    to->num_pieces += from->num_pieces; // Pieces of to are now the pieces of to + the pieces in from
+    from->num_pieces = 0; // From pieces set to 0
     if(to->num_pieces > 5) {
-        to->bottom = to->stack->next->next->next->next;
-        cut_stack(to, players);
+        to->bottom = to->stack->next->next->next->next; // Bottom set to the 5th pointer
+        cut_stack(to, players); // Cuts the stack if greater than 5 pieces
     }
 
 }
