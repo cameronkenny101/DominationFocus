@@ -1,50 +1,16 @@
-==4590== Memcheck, a memory error detector
-==4590== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4590== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4590== Command: ./DominationGame
-==4590== Parent PID: 4
-==4590== 
-==4590== error calling PR_SET_PTRACER, vgdb might block
-==4590== Conditional jump or move depends on uninitialised value(s)
-==4590==    at 0x109B9F: move_piece (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10A5F8: play_game (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x109319: main (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590== 
-==4590== Invalid read of size 8
-==4590==    at 0x10AA70: free_memory (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10AA1E: finish_screen (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10A75B: play_game (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x109319: main (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==  Address 0x4a49118 is 8 bytes inside a block of size 16 free'd
-==4590==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==4590==    by 0x10AA6B: free_memory (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10AA1E: finish_screen (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10A75B: play_game (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x109319: main (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==  Block was alloc'd at
-==4590==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==4590==    by 0x109615: set_red (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x1097B0: initialize_board (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10926F: main (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590== 
-==4590== 
-==4590== HEAP SUMMARY:
-==4590==     in use at exit: 80 bytes in 5 blocks
-==4590==   total heap usage: 38 allocs, 33 frees, 8,768 bytes allocated
-==4590== 
-==4590== 80 bytes in 5 blocks are definitely lost in loss record 1 of 1
-==4590==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
-==4590==    by 0x109615: set_red (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x1097B0: initialize_board (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590==    by 0x10926F: main (in /mnt/c/users/camek/Documents/GitHub/DominationFocus/build/DominationGame)
-==4590== 
-==4590== LEAK SUMMARY:
-==4590==    definitely lost: 80 bytes in 5 blocks
-==4590==    indirectly lost: 0 bytes in 0 blocks
-==4590==      possibly lost: 0 bytes in 0 blocks
-==4590==    still reachable: 0 bytes in 0 blocks
-==4590==         suppressed: 0 bytes in 0 blocks
-==4590== 
-==4590== Use --track-origins=yes to see where uninitialised values come from
-==4590== For lists of detected and suppressed errors, rerun with: -s
-==4590== ERROR SUMMARY: 29 errors from 3 contexts (suppressed: 0 from 0)
+==137== Memcheck, a memory error detector
+==137== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==137== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==137== Command: ./DominationGame
+==137== Parent PID: 4
+==137== 
+==137== error calling PR_SET_PTRACER, vgdb might block
+==137== 
+==137== HEAP SUMMARY:
+==137==     in use at exit: 0 bytes in 0 blocks
+==137==   total heap usage: 40 allocs, 40 frees, 8,800 bytes allocated
+==137== 
+==137== All heap blocks were freed -- no leaks are possible
+==137== 
+==137== For lists of detected and suppressed errors, rerun with: -s
+==137== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

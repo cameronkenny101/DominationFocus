@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "game_init.h"
 #include "input_output.h"
-#include "player_movement.h"
 #include "play_game.h"
 
 int main()
