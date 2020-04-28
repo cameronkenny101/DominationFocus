@@ -119,7 +119,7 @@ void play_game(player player1, player player2, square board[8][8])
         else
             green(); // Text is set to green
 
-        printf("\n\n\n\nTurn : %d\nPlayer 2 : %s", turns, player2.player_name);
+        printf("\n\nTurn : %d\nPlayer 2 : %s", turns, player2.player_name);
         printf("You have captured %d pieces\n", player2.pieces_captured);
         printf("You have destroyed %d pieces\n", player2.pieces_destroyed);
 
@@ -157,13 +157,13 @@ void play_game(player player1, player player2, square board[8][8])
 // Function for finish screen of game
 void finish_screen(player winner, int turns, square board[8][8]) {
     printf("\n\n\n\n ************** GAME OVER **************\n");
-    printf("Player : %s won!\n", winner.player_name); // Prints the winners name
+    printf("Winner : %s", winner.player_name); // Prints the winners name
     printf("It took you %d turns to win\n", turns); // Prints the total turns it took to win
 
     if(winner.player_color == RED)
-        printf("%s won as the red color!\n", winner.player_name); // Prints the winners color
+        printf("You won as the red color!\n"); // Prints the winners color
     else
-        printf("%s won as the green color!\n", winner.player_name); // Prints the winners color
+        printf("You won as the green color!\n"); // Prints the winners color
 
     printf("You finished the game with %d captured pieces\n", winner.pieces_captured); // Prints the number of pieces the player has by the end of the game
     printf("You finished the game destroying %d pieces\n", winner.pieces_destroyed); // Prints the number of pieces a player destroyed

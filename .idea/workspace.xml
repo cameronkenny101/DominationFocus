@@ -13,12 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="443c94bb-0cee-426e-82f6-25317f75a14a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/src/play_game.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/src/play_game.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/src/player_movement.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/DominationGame.dir/src/player_movement.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/DominationGame" beforeDir="false" afterPath="$PROJECT_DIR$/build/DominationGame" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/valgrind.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/valgrind.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DominationGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/play_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/play_game.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,8 @@
       <workItem from="1587053565972" duration="16479000" />
       <workItem from="1587668605219" duration="11882000" />
       <workItem from="1587729535512" duration="10190000" />
-      <workItem from="1587828872531" duration="10235000" />
+      <workItem from="1587828872531" duration="11408000" />
+      <workItem from="1588081383574" duration="314000" />
     </task>
     <servers />
   </component>
@@ -157,10 +154,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586277805970" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1587828914588">
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1588081453589">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587828914588" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1588081453589" />
     <state x="330" y="169" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586277646137">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

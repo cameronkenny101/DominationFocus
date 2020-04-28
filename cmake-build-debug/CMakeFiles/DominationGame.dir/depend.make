@@ -18,7 +18,6 @@ CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/game_init.h
 CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/input_output.h
 CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/main.c
 CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/play_game.h
-CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/player_movement.h
 CMakeFiles/DominationGame.dir/src/main.c.obj: ../src/structs.h
 
 CMakeFiles/DominationGame.dir/src/play_game.c.obj: ../src/OS_functions.h
